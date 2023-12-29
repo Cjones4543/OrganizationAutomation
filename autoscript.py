@@ -15,5 +15,8 @@ for item in os.listdir(target_folder):
     if os.path.isfile(os.path.join(target_folder, item)):
         file_extension = item.split('.')[-1]
         shutil.move(os.path.join(target_folder, item), os.path.join(target_folder, file_extension, item))
-
+# Script does organize downloads, need to swap the names on the files out
+# instead of the folders being named by extension, they need to be named by
+# category, like png, jpg, and jpeg into an image folder, etc.
 exit()
+
